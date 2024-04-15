@@ -4,6 +4,7 @@ import Popular from './Popular'
 import styled from 'styled-components'
 import Upcoming from './Upcoming'
 import Airing from './Airing'
+import img1 from "../assets/MWM Black Logo.png"
 
 function Homepage() {
 
@@ -34,6 +35,11 @@ function Homepage() {
     return (
         <HomepageStyled>
             <header>
+                    <img src={img1} style={{
+                        width:"5rem",
+                        position:"absolute",
+                        left:"5%"
+                    }}/>
                 <div className="logo">
                     <h1>
                         {rendered === 'popular' ? 'Popular Anime' : 
